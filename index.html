@@ -215,38 +215,6 @@ Athena Quality Advisory
 
 </div>
 
-<script>
-
-function downloadVCard(){
-
-const vcard = `BEGIN:VCARD
-VERSION:3.0
-FN:Monica Zambuzi
-ORG:Athena Quality Advisory
-TITLE:Founder & Principal Advisor
-TEL:+5519992626632
-EMAIL:monica@serathena.com.br
-URL:https://www.linkedin.com/in/monica-zambuzi
-END:VCARD`;
-
-const blob = new Blob([vcard], { type: 'text/vcard' });
-
-const url = window.URL.createObjectURL(blob);
-
-const a=document.createElement("a");
-
-a.href=url;
-
-a.download="Monica_Zambuzi.vcf";
-
-a.click();
-
-window.URL.revokeObjectURL(url);
-
-}
-
-</script>
-
 </body>
 
 </html>

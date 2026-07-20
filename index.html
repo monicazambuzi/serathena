@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Monica Zambuzi | Athena Quality Advisory</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+margin:0;
+
+background:#F4E8DA;
+
+font-family:Inter,sans-serif;
+
+color:#3B2F2F;
+
+}
+
+.container{
+
+max-width:650px;
+
+margin:auto;
+
+padding:50px 25px;
+
+text-align:center;
+
+}
+
+.logo{
+
+width:300px;
+
+margin-bottom:25px;
+
+}
+
+.photo{
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:5px solid #B68A2C;
+
+}
+
+h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:54px;
+
+margin:20px 0 5px;
+
+}
+
+h2{
+
+font-weight:300;
+
+letter-spacing:3px;
+
+font-size:18px;
+
+color:#B68A2C;
+
+margin-top:0;
+
+}
+
+.frase{
+
+font-size:24px;
+
+font-family:"Cormorant Garamond",serif;
+
+margin:40px 0 15px;
+
+}
+
+.sub{
+
+font-size:18px;
+
+letter-spacing:2px;
+
+color:#8B6B2E;
+
+margin-bottom:40px;
+
+}
+
+.botao{
+
+display:block;
+
+margin:15px auto;
+
+width:90%;
+
+max-width:420px;
+
+padding:18px;
+
+background:#3B2F2F;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.botao:hover{
+
+background:#8B6B2E;
+
+}
+
+.footer{
+
+margin-top:60px;
+
+font-size:14px;
+
+color:#777;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo">
+
+<img src="monica.jpg" class="photo">
+
+<h1>Monica Zambuzi</h1>
+
+<h2>Founder & Principal Advisor</h2>
+
+<div class="frase">
+
+Transformando qualidade em estratégia para gerar resultados sustentáveis.
+
+</div>
+
+<div class="sub">
+
+GOVERNANÇA • EFICIÊNCIA • CULTURA
+
+</div>
+
+<a class="botao" href="#" onclick="downloadVCard()">
+
+📇 Salvar contato
+
+</a>
+
+<a class="botao"
+
+href="https://wa.me/5519992626632">
+
+WhatsApp
+
+</a>
+
+<a class="botao"
+
+href="mailto:monica@serathena.com.br">
+
+E-mail
+
+</a>
+
+<a class="botao"
+
+href="https://www.linkedin.com/in/monica-zambuzi">
+
+LinkedIn
+
+</a>
+
+<div class="footer">
+
+Athena Quality Advisory
+
+</div>
+
+</div>
+
+<script>
+
+function downloadVCard(){
+
+const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Monica Zambuzi
+ORG:Athena Quality Advisory
+TITLE:Founder & Principal Advisor
+TEL:+5519992626632
+EMAIL:monica@serathena.com.br
+URL:https://www.linkedin.com/in/monica-zambuzi
+END:VCARD`;
+
+const blob = new Blob([vcard], { type: 'text/vcard' });
+
+const url = window.URL.createObjectURL(blob);
+
+const a=document.createElement("a");
+
+a.href=url;
+
+a.download="Monica_Zambuzi.vcf";
+
+a.click();
+
+window.URL.revokeObjectURL(url);
+
+}
+
+</script>
+
+</body>
+
+</html>
